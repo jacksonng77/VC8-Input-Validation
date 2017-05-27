@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+
+        <script src="lib/jquery-1.11.2.min.js"></script>
+        <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+        <script src="scripts/common.js"></script>
+
+        <title>C7</title>
+    </head>
+    <body>
+        <div data-role="main" class="ui-content">
+            <form name="salaryform" id="salaryform">
+                <div class="ui-field-contain">
+
+                    <div data-role="fieldcontainer">
+                        <label for="txtBasicsalary">Basic Salary:</label>
+                        <input type="text" name="txtBasicSalary" id="txtBasicSalary">
+                    </div>
+
+                    <div data-role="fieldcontainer">
+                        <label for="txtItemssold">Items Sold:</label>
+                        <input type="text" name="txtItemsSold" id="txtItemsSold">
+                    </div>
+
+                    <div data-role="fieldcontainer">
+                        <fieldset data-role="controlgroup" data-type="horizontal">
+                            <legend>Disciplinary Action Taken?</legend>
+                            <label for="Yes">Yes</label>
+                            <input type="radio" name="rdoDiscipline" id="Yes" value="TRUE">
+
+                            <label for="No">No</label>
+                            <input type="radio" name="rdoDiscipline" id="No" value="FALSE">
+                        </fieldset>
+                    </div>
+
+                    <div data-role="fieldcontainer">
+                        <label for="txtCommission13">Commission Per Item Sold (1 to 3 pieces):</label>
+                        <input type="text" name="txtCommission13" id="txtCommission13">
+                    </div>
+
+                    <div data-role="fieldcontainer">
+                        <label for="txtCommission46">Commission Per Item Sold (4 to 6 pieces):</label>
+                        <input type="text" name="txtCommission46" id="txtCommission46">
+                    </div>
+
+                    <div data-role="fieldcontainer">
+                        <label for="txtCommission7">Commission Per Item Sold (7 pieces and above):</label>
+                        <input type="text" name="txtCommission7" id="txtCommission7">
+                    </div>
+
+                    <input type="button" value="Calculate" id="btnCalculate">
+                    </div>
+            </form>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+    </body>
+</html>
