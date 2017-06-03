@@ -92,4 +92,7 @@
     <Folder Include="Content\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4a0dddb5-7a95-4fbf-97cc-616d07737a77}" />
+  </ItemGroup>
 </Project>

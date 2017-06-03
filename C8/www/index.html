@@ -14,25 +14,41 @@
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
 
-        <script src="lib/jquery-1.11.2.min.js"></script>
-        <script src="lib/jquery.mobile-1.4.5.min.js"></script>
-        <script src="scripts/common.js"></script>
+<script src="lib/jquery-1.11.2.min.js"></script>
+<script src="lib/jquery.mobile-1.4.5.min.js"></script>
+<script src="scripts/common.js"></script>
+<script src="lib/jquery.validate.min.js"></script>
 
-        <title>C7</title>
+        <title>C8</title>
     </head>
     <body>
+        
         <div data-role="main" class="ui-content">
             <form name="salaryform" id="salaryform">
                 <div class="ui-field-contain">
 
                     <div data-role="fieldcontainer">
-                        <label for="txtBasicsalary">Basic Salary:</label>
-                        <input type="text" name="txtBasicSalary" id="txtBasicSalary">
+                        <label for="txtName">Employee Name:</label>
+                        <input type="text" name="txtName" id="txtName" value="John Lim" required>
                     </div>
 
                     <div data-role="fieldcontainer">
-                        <label for="txtItemssold">Items Sold:</label>
-                        <input type="text" name="txtItemsSold" id="txtItemsSold">
+                        <label for="txtMonths">Months Worked:</label>
+                        <input type="text" name="txtMonths" id="txtMonths" value="3" required>
+                    </div>
+
+                    <div data-role="fieldcontainer">
+                        <label for="txtRate">Monthly Rate:</label>
+                        <input type="number" name="txtRate" id="txtRate" value="4505" required>
+                    </div>
+
+                    <div data-role="fieldcontainer">
+                        <label for="role">Role</label>
+                        <select name="selRole" id="selRole">
+                            <option value="1">Executive</option>
+                            <option value="1.254" selected>Manager</option>
+                            <option value="1.478">Director</option>
+                        </select>
                     </div>
 
                     <div data-role="fieldcontainer">
@@ -42,27 +58,12 @@
                             <input type="radio" name="rdoDiscipline" id="Yes" value="TRUE">
 
                             <label for="No">No</label>
-                            <input type="radio" name="rdoDiscipline" id="No" value="FALSE">
+                            <input type="radio" name="rdoDiscipline" id="No" value="FALSE" checked>
                         </fieldset>
                     </div>
 
-                    <div data-role="fieldcontainer">
-                        <label for="txtCommission13">Commission Per Item Sold (1 to 3 pieces):</label>
-                        <input type="text" name="txtCommission13" id="txtCommission13">
-                    </div>
-
-                    <div data-role="fieldcontainer">
-                        <label for="txtCommission46">Commission Per Item Sold (4 to 6 pieces):</label>
-                        <input type="text" name="txtCommission46" id="txtCommission46">
-                    </div>
-
-                    <div data-role="fieldcontainer">
-                        <label for="txtCommission7">Commission Per Item Sold (7 pieces and above):</label>
-                        <input type="text" name="txtCommission7" id="txtCommission7">
-                    </div>
-
                     <input type="button" value="Calculate" id="btnCalculate">
-                    </div>
+                </div>
             </form>
         </div>
 

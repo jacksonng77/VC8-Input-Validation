@@ -28,3 +28,16 @@ function getRadioValue(groupName) {
     } catch (e) { }
     return _result;
 }
+
+function validationMsgs(message, title, button) {
+    navigator.notification.alert(
+        message,
+        function () { },
+        title,
+        button
+    );
+}
+
+function round(number, decimals) {
+    return +(Math.round(number + "e+" + decimals) + "e-" + decimals);
+}
