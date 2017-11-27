@@ -29,7 +29,6 @@ $("#salaryform").validate({
         error.appendTo(element.parent().parent().after());
     },
 });
-});
 
 function calculateSalary() {
     var employeename, months, rate, role, salary;
